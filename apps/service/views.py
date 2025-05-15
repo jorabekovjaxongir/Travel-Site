@@ -11,7 +11,7 @@ def times(number):
 
 def serviceView(request):
     return render(request, 'services.html',context={
-        'service1': Service.objects.all()[:1],
-        'service2': Service.objects.all()[1:],
+        'service1': Service.objects.all()[:3],
+        'service2': Service.objects.all()[3:],
         'feedback_clients': FeedbackClient.objects.all(),
         })
