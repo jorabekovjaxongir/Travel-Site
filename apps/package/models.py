@@ -41,3 +41,13 @@ class BookingTour(models.Model):
 
     def __str__(self) -> str:
         return self.full_name
+    
+class Subscription(models.Model):
+    email = models.EmailField()
+
+    is_published = models.BooleanField(default=False)
+    update_date = models.DateTimeField(auto_now=True)
+    create_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

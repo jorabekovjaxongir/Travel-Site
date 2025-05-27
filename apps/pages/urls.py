@@ -1,19 +1,19 @@
 from django.urls import path
 from .views import (
-    destinationView,
-    explore_tourView,
-    travel_bookingView,
-    our_galleryView,
-    travel_guidesView,
-    testimonialView,
+    destination,
+    explore_tour,
+    travel_booking,
+    our_gallery,
+    travel_guides,
+    testimonial,
 )
 
 
 urlpatterns = [
-    path('destination/',destinationView, name='destination'),
-    path('explore_tour/',explore_tourView, name='explore_tour'),
-    path('travel_booking/',travel_bookingView, name='travel_booking'),
-    path('our_gallery/',our_galleryView, name='our_gallery'),
-    path('travel_guides/',travel_guidesView, name='travel_guides'),
-    path('testimonial/',testimonialView, name='testimonial'),
+    path('destination/',destination, name='destination'),
+    path('explore_tour/',explore_tour, name='explore_tour'),
+    path('travel_booking/',travel_booking, name='travel_booking'),
+    path('our_gallery/',our_gallery, name='our_gallery'),
+    path('travel_guides/',travel_guides, name='travel_guides'),
+    path('testimonial/',testimonial, name='testimonial'),
 ]
